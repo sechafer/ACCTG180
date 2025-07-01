@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentario Canvas - Samuel Chacón</title>
+    <style>
+        .comment-container {
+            max-width: 650px;
+            margin: 20px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #e5e5e5;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2c5aa0;
+        }
+        
+        .intro {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .flag {
+            font-size: 18px;
+            margin: 0 3px;
+        }
+        
+        .location {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: inline-block;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+        
+        .profession {
+            color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .question-section {
+            margin-top: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .answer {
+            text-align: justify;
+            color: #444;
+        }
+        
+        .answer p {
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background: #e8f2ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #2c5aa0;
+        }
+        
+        .example-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .example-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 8px;
+        }
+        
+        .photo-placeholder {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .photo-box {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            color: #666;
+            font-style: italic;
+            margin: 0 auto;
+        }
+        
+        .closing {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .emoji {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="comment-container">
+        <div class="header">
+            <div class="name">Hello everyone!</div>
+            <div class="intro">
+                My name is <strong>Samuel Chacón</strong>, and I am from <span class="flag">🇻🇪</span> Venezuela. I am currently 24 years old and live in <span class="location">São Bernardo do Campo, São Paulo, Brazil <span class="flag">🇧🇷</span></span>
+            </div>
+            <div class="profession">
+                I am an Electrical Engineer and have recently started a small technology consulting company. I am also studying software development because I am passionate about technology and always looking for ways to grow professionally.
+            </div>
+            
+            <!-- Photo placeholder - Add your image here -->
+            <div class="photo-placeholder">
+                <div class="photo-box">
+                     <img src="./samuel.jpeg" alt="Samuel Chacon" class="profile-image" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-section">
+            <div class="question">
+                <span class="emoji">❓</span> Why is integrity important to have in accounting? Give an example.
+            </div>
+            <div class="answer">
+                <p>Integrity is <span class="highlight">absolutely fundamental</span> in accounting because it serves as the cornerstone of trust between businesses and all their stakeholders. Accountants are entrusted with sensitive financial information that directly impacts critical business decisions, investments, and regulatory compliance.</p>
+                
+                <p><strong>Why integrity matters in accounting:</strong></p>
+                <p>• <strong>Trust and credibility:</strong> Stakeholders rely on accurate financial reports to make informed decisions<br>
+                • <strong>Legal compliance:</strong> Ensures adherence to accounting standards and regulations<br>
+                • <strong>Market stability:</strong> Honest reporting maintains confidence in financial markets<br>
+                • <strong>Professional reputation:</strong> Protects both individual and industry credibility</p>
+                
+                <div class="example-box">
+                    <div class="example-title"><span class="emoji">📊</span> Real-World Example:</div>
+                    <p>A powerful example of the consequences of lacking integrity in accounting comes from the Venezuelan banking crisis. In the early 2010s, several banks, including Banco Federal and BanPro, were involved in accounting fraud scandals where executives and accountants manipulated financial statements to hide massive losses and present false profitability.</p>
+                    
+                    <p><strong>What happened:</strong><br>
+                    • Banks inflated asset values and concealed non-performing loans<br>
+                    • False financial reports were submitted to regulatory authorities<br>
+                    • Depositors and investors were misled about the banks' true financial health</p>
+                    
+                    <p><strong>An accountant with integrity would have:</strong><br>
+                    ✅ Refused to falsify financial records<br>
+                    ✅ Reported accurate loan default rates<br>
+                    ✅ Disclosed true asset valuations<br>
+                    ✅ Alerted regulatory authorities about irregularities</p>
+                    
+                    <p><strong>The consequences:</strong> These banks eventually collapsed, thousands of depositors lost their savings, and it contributed to Venezuela's broader economic crisis. This demonstrates how lack of integrity in accounting doesn't just affect individual companies—it can impact entire economies and destroy people's lives.</p>
+                </div>
+                
+                <p>As someone working in technology consulting, I understand how important accurate financial reporting is for business success. <span class="highlight">Integrity in accounting isn't just about following rules—it's about building sustainable businesses based on trust and transparency.</span></p>
+            </div>
+        </div>
+        
+        <div class="closing">
+            <span class="emoji">🚀</span> I'm excited to learn with all of you and share experiences throughout this course!<br>
+            Looking forward to a great semester! <span class="emoji">📚</span>
+        </div>
+    </div>
+</body>
+</html>
