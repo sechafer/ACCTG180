@@ -110,18 +110,14 @@
             text-align: center;
         }
         
-        .photo-box {
-            width: 200px;
-            height: 200px;
-            border: 2px dashed #ccc;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #f9f9f9;
-            color: #666;
-            font-style: italic;
-            margin: 0 auto;
+        .profile-photo {
+            max-width: 160px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid #2c5aa0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .closing {
@@ -143,17 +139,12 @@
         <div class="header">
             <div class="name">Hello everyone!</div>
             <div class="intro">
-                My name is <strong>Samuel Chacón</strong>, and I am from <span class="flag">🇻🇪</span> Venezuela. I am currently 41 years old and live in <span class="location">São Bernardo do Campo, São Paulo, Brazil <span class="flag">🇧🇷</span></span>
-            </div>
-            <div class="profession">
-                I am an Electrical Engineer and have recently started a small technology consulting company. I am also studying software development because I am passionate about technology and always looking for ways to grow professionally.
+                My name is <strong>Samuel Chacón</strong>, and I am from <span class="flag">🇻🇪</span> Venezuela but currently reside in <span class="location">São Bernardo do Campo, São Paulo, Brazil <span class="flag">🇧🇷</span></span>. I am an electrical engineer and software development professional. I own a technology company and provide email marketing support for <strong>Sky Brasil</strong>, a telecommunications company. I have been married for 15 years, and my wife is also studying at <strong>BYU</strong>. By God's grace, we will both complete all our coursework this December.
             </div>
             
-            <!-- Photo placeholder - Add your image here -->
+            <!-- Photo section -->
             <div class="photo-placeholder">
-                <div class="photo-box">
-                     <img src="./samuel.jpeg" alt="Samuel Chacon" class="profile-image" />
-                </div>
+                <img src="./samuel.jpeg" alt="Samuel Chacon" class="profile-photo" />
             </div>
         </div>
         
